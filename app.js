@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({extended : true}))
 app.use('/images',express.static(path.join(__dirname,'images')))
 app.use(cors({
-  origin : '*',
+  origin :'*'
 }))
 
 // Importing Routes handler 
